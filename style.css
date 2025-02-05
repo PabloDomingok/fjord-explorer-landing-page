@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    outline: 1px solid red;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8fa;
+}
+
+header{
+    background-image: url('Assets/hero-image.webp');
+    background-size: cover;
+    height: 100vh;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 20px 50px 0px 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border: 1px solid #f8f8fa;
+    border-radius: 50px;
+}
+  
+ul li a{
+    text-decoration: none;
+    color: #f8f8fa;
+    font-size: 0.8rem;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-buttons button{
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero-text{
+    color: #ffffff;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+}
+
+form{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border: 1px solid #f8f8fa;
+    border-radius: 50px;
+}
+
+form input{
+    border: none;
+    background: transparent;
+    color: #f8f8fa;
+}

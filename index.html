@@ -6,6 +6,9 @@
     <title>Fjord Explorer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b82ddda10e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,10 +21,36 @@
                 <li><a>Contact</a></li>
             </ul>
             <div class="nav-buttons">
-                <button id="language-toggle">En</button>
+                <input type="radio">
                 <button>Login</button>
             </div>
         </nav>
+        <section class="hero-text">
+            <h1>Extraordinary natural and cultural charm</h1>
+            <p>Experience the beauty of Norway with our expert guides</p>
+            <form>
+                <input type="date" placeholder="Date"  min="2025-02-05" max="2026-12-31">
+                
+                <input list="budget-options" name="budget" placeholder="Budget">
+                <datalist id="budget-options">
+                    <option value="$100 - $500">
+                    <option value="$500 - $1000">
+                    <option value="$1000 - $2000">
+                    <option value="$2000+">
+                </datalist>
+                
+                <input list="guest-options" name="guest" placeholder="Guest">
+                <datalist id="guest-options">
+                    <option value="1 Guest">
+                    <option value="2 Guests">
+                    <option value="3 Guests">
+                    <option value="4+ Guests">
+                </datalist>
+                
+                <button type="submit">Search</button>
+            </form>
+            
+        </section>
     </header>
     
 </body>
