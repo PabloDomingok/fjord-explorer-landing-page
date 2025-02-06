@@ -28,27 +28,27 @@
         <section class="hero-text">
             <h1>Extraordinary natural and cultural charm</h1>
             <p>Experience the beauty of Norway with our expert guides</p>
-            <form>
-                <input type="date" placeholder="Date"  min="2025-02-05" max="2026-12-31">
-                
-                <input list="budget-options" name="budget" placeholder="Budget">
-                <datalist id="budget-options">
-                    <option value="$100 - $500">
-                    <option value="$500 - $1000">
-                    <option value="$1000 - $2000">
-                    <option value="$2000+">
-                </datalist>
-                
-                <input list="guest-options" name="guest" placeholder="Guest">
-                <datalist id="guest-options">
-                    <option value="1 Guest">
-                    <option value="2 Guests">
-                    <option value="3 Guests">
-                    <option value="4+ Guests">
-                </datalist>
-                
-                <button type="submit">Search</button>
-            </form>
+            <div class="search-bar-container">
+                <div class="search-bar-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <label for="date">Date</label>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="bar"></div>
+                <div class="search-bar-date">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <label for="budget">Budget</label>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="bar"></div>
+                <div class="search-bar-date">
+                    <i class="fa-solid fa-person"></i>
+                    <label for="guests">Guests</label>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+            
             
         </section>
     </header>
