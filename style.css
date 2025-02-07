@@ -107,3 +107,34 @@ ul li a{
     border-radius: 50px;
     cursor: pointer;
 }
+
+.statistics-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.statistic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 31px 87px -36px rgba(0,0,0,1);
+-webkit-box-shadow: 3px 31px 87px -36px rgba(0,0,0,1);
+-moz-box-shadow: 3px 31px 87px -36px rgba(0,0,0,1);
+}
+
+.statistic h2{
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.statistic p{
+    font-size: 0.8rem;
+    color: #838282;
+}
