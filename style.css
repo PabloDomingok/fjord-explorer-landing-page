@@ -276,3 +276,85 @@ ul li a{
 }
 
 
+/*how-it-woks*/
+
+.how-it-works{
+    display: flex;
+    gap: 40px;
+    margin-top: 120px;
+    padding: 40px;
+}
+
+.how-it-works-image{
+    background-image: url('Assets/how-it-works-image.jpg');
+    background-size: cover;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    gap: 5px;
+}
+
+.how-it-works-image p{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.how-it-works-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.how-it-works-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.how-it-works-title h1{
+    font-size: 2.2rem;
+    color: #000000;
+}
+
+.how-it-works-title p{
+    color: #838282;
+}   
+
+.how-it-works-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.how-it-works-step{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.how-it-works-step i {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.step-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step-content p{
+    color: #838282;
+}
