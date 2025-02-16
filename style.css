@@ -409,37 +409,63 @@ ul li a{
     background-image: url('Assets/bergen-card.jpeg');
     background-size: cover;
     width: 30%;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding: 20px;
-    gap: 5px;
+    gap: 280px;
 }
 
 .tour-packages-card-2{
     background-image: url('Assets/oslo-card.jpeg');
     background-size: cover;
     width: 30%;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding: 20px;
-    gap: 5px;
+    gap: 280px;
 }
 
 .tour-packages-card-3{
     background-image: url('Assets/tromso-card.jpeg');
     background-size: cover;
     width: 30%;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding: 20px;
+    gap: 280px;
+}
+
+.tour-packages-card-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.rating{
+    display: flex;
     gap: 5px;
+}
+
+.price-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    
 }
