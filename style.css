@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-image: url('Assets/hero-image.webp');
+    background-image: url('Assets/hero-image.jpg');
     background-size: cover;
     height: 100vh;
     margin: 5px;
@@ -154,6 +154,7 @@ ul li a{
     align-items: end;
     justify-content: space-between;
     gap: 200px;
+    padding: 20px;
 }
 
 .best-locations-text p{
@@ -649,7 +650,7 @@ footer{
 .newsletter-input-container{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #838282;
     border-radius: 50px;
 }
@@ -669,6 +670,12 @@ footer{
     width: 300px;
     border: none;
     background-color: transparent;
+}
+
+.newsletter input:focus{
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 .social-media{
