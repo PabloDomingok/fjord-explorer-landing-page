@@ -14,3 +14,13 @@ statisticsEls.forEach((stat) => {
         }
     }, 1); 
 });
+
+
+document.querySelectorAll(".how-it-works-step").forEach(step => {
+    step.addEventListener("click", function() {
+        
+        document.querySelectorAll(".how-it-works-step").forEach(s => s.classList.remove("active"));
+        
+        this.classList.add("active");
+    });
+});
