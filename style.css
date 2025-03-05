@@ -150,7 +150,7 @@ a:hover{
     text-align: center;
     line-height: 1;
     padding: 9px 4px;
-    background-color: #838282;
+    background-color: rgb(105, 146, 105);
     border-radius: 50%;
     transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
   }
@@ -167,7 +167,7 @@ a:hover{
   #button-3 .checkbox:checked + .knobs:before {
     content: "NO";
     left: 42px;
-    background-color: #838282;
+    background-color:rgb(105, 146, 105);
   }
   
   #button-3 .checkbox:checked ~ .layer {
@@ -611,6 +611,7 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
 .tour-packages-text p{
     color: #838282;
     width: 50%;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
 }
 
 .tour-packages-title{
@@ -622,10 +623,12 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
 .tour-packages-title h1{
     font-size: 2.2rem;
     color: #000000;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .tour-packages-title p{
     color: #838282;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .tour-packages-cards-container{
@@ -884,6 +887,12 @@ footer{
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter button:hover{
+    background: #ffffff;
+    color: #838282;
 }
 
 .newsletter input {
@@ -920,4 +929,10 @@ footer{
     padding: 10px;
     background-color: #838282;
     border-radius: 50%;
-}   
+    transition: all 0.5s ease;
+}
+
+.social-media i:hover{
+    background-color: #ffffff;
+    color: #838282;
+}

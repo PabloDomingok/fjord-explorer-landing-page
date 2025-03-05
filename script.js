@@ -15,6 +15,24 @@ statisticsEls.forEach((stat) => {
     }, 1); 
 });
 
+const ratingEls = document.querySelectorAll('.tour-packages-card-info .rating p');
+
+ratingEls.forEach((rating) => {
+    let targetValue = parseFloat(rating.textContent); 
+    let counter = 0;
+    
+    let updateCounter = setInterval(() => {
+        counter += 0.09; 
+        rating.textContent = counter.toFixed(1); 
+        
+        if (counter >= targetValue) {
+            clearInterval(updateCounter);
+            rating.style.color = 'white'; 
+        }
+    }, 10);
+});
+
+
 
 document.querySelectorAll(".how-it-works-step").forEach(step => {
     step.addEventListener("click", function() {
