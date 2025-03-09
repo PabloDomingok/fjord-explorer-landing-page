@@ -34,11 +34,40 @@ ratingEls.forEach((rating) => {
 
 
 
-document.querySelectorAll(".how-it-works-step").forEach(step => {
+const steps = document.querySelectorAll(".how-it-works-step");
+const imageContainer = document.querySelector(".how-it-works-image p");
+const howItWorksImage = document.querySelector(".how-it-works-image");
+
+
+const stepData = [
+    { 
+        image: "url('Assets/find-destination.png')", 
+        text: "Start your adventure by finding the perfect destination tailored to your desires."
+    },
+    { 
+        image: "url('Assets/book-ticket.png')", 
+        text: "Book your ticket with ease and secure your journey with just a few clicks."
+    },
+    { 
+        image: "url('Assets/make-payment.png')", 
+        text: "Make secure payments and get ready for your unforgettable experience."
+    },
+    { 
+        image: "url('Assets/explore-destination.png')", 
+        text: "Explore new places, embrace the culture, and enjoy the adventure of a lifetime."
+    }
+];
+
+steps.forEach((step, index) => {
     step.addEventListener("click", function() {
         
-        document.querySelectorAll(".how-it-works-step").forEach(s => s.classList.remove("active"));
+        steps.forEach(s => s.classList.remove("active"));
         
         this.classList.add("active");
+
+        
+        howItWorksImage.style.backgroundImage = stepData[index].image;
+        imageContainer.textContent = stepData[index].text;
     });
 });
+

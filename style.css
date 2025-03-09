@@ -502,9 +502,10 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
 }
 
 .how-it-works-image{
-    background-image: url('Assets/how-it-works-image.png');
+    background-image: url('Assets/find-destination.png');
     background-size: cover;
     height: 600px;
+    width: 500px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
