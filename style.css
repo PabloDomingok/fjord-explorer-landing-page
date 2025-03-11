@@ -750,6 +750,51 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
     color: #ffffff;
 }
 
+/*testimonials*/
+
+.testimonials{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 230px;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonials-person-info{
+    display: flex;
+    gap: 10px;
+}
+
+.testimonials-text{
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+
+.testimonials-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonials-arrows{
+    display: flex;
+    gap: 20px;
+}
+
+.testimonials-arrows i{
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+}
+
 /*our-blog*/
 
 .our-blog{
