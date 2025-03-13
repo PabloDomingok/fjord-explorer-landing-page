@@ -71,3 +71,40 @@ steps.forEach((step, index) => {
     });
 });
 
+const testimonials = [
+    {
+        img: "Assets/person-1.jpeg",
+        name: "Andrea Fridman",
+        role: "Fiko's Founder",
+        text: "My experience with Fjord Explorer was fantastic. The tour was well-organized, allowing us to fully enjoy Norway’s stunning landscapes without feeling rushed. Our guide was knowledgeable and passionate, sharing fascinating insights that made the trip even more special. Every detail was carefully planned, making for a smooth and memorable adventure. I highly recommend Fjord Explorer to anyone looking to explore Norway’s beauty in the best way possible!"
+    },
+    {
+        img: "Assets/person-2.jpeg",
+        name: "Carlos Méndez",
+        role: "Tech Startup CEO",
+        text: "The service exceeded my expectations! Every detail was taken care of, making it an effortless and enjoyable experience. I felt completely supported and appreciated the personalized attention. Highly recommended!"
+    },
+    {
+        img: "Assets/person-3.jpeg",
+        name: "Samantha Lee",
+        role: "Marketing Director",
+        text: "I was blown away by the professionalism and quality. The team went above and beyond to deliver an outstanding result. I wouldn’t hesitate to work with them again!"
+    }
+];
+
+let currentTestimonial = 0;
+
+function changeTestimonial(direction) {
+    currentTestimonial += direction;
+    if (currentTestimonial < 0) {
+        currentTestimonial = testimonials.length - 1;
+    } else if (currentTestimonial >= testimonials.length) {
+        currentTestimonial = 0;
+    }
+
+    document.getElementById("testimonial-img").src = testimonials[currentTestimonial].img;
+    document.getElementById("testimonial-name").textContent = testimonials[currentTestimonial].name;
+    document.getElementById("testimonial-role").textContent = testimonials[currentTestimonial].role;
+    document.getElementById("testimonial-text").textContent = testimonials[currentTestimonial].text;
+}
+

@@ -220,19 +220,19 @@
         <section class="testimonials">
             <div class="testimonials-container">
                 <div class="testimonials-person-info">
-                    <img src="Assets/person-1.png" alt="Person 1">
+                    <img id="testimonial-img" src="Assets/person-1.jpeg" alt="Person 1">
                     <div class="testimonials-title">
-                        <p>Donald Sullivan</p>
-                        <h4>Founder Fiko</h4>
+                        <h4 id="testimonial-name">Andrea Fridman</h4>
+                        <p id="testimonial-role">Fiko's Founder</p>
                     </div>
                 </div>
                 <div class="testimonials-arrows">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-left" onclick="changeTestimonial(-1)"></i>
+                    <i class="fa-solid fa-arrow-right" onclick="changeTestimonial(1)"></i>
                 </div>
             </div>            
             <div class="testimonials-text">
-                <p>"My experience with Fjord Explorer was fantastic. The tour was well-organized, allowing us to fully enjoy Norway’s stunning landscapes without feeling rushed. Our guide was knowledgeable and passionate, sharing fascinating insights that made the trip even more special. Every detail was carefully planned, making for a smooth and memorable adventure. I highly recommend Fjord Explorer to anyone looking to explore Norway’s beauty in the best way possible!"</p>
+                <p id="testimonial-text">My experience with Fjord Explorer was fantastic. The tour was well-organized, allowing us to fully enjoy Norway’s stunning landscapes without feeling rushed. Our guide was knowledgeable and passionate, sharing fascinating insights that made the trip even more special. Every detail was carefully planned, making for a smooth and memorable adventure. I highly recommend Fjord Explorer to anyone looking to explore Norway’s beauty in the best way possible!</p>
             </div>
         </section>
         <section class="our-blog">
