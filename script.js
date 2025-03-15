@@ -108,3 +108,43 @@ function changeTestimonial(direction) {
     document.getElementById("testimonial-text").textContent = testimonials[currentTestimonial].text;
 }
 
+document.getElementById("viewMoreButton").addEventListener("click", function() {
+    const container = document.getElementById("blogCardsContainer");
+    const button = document.getElementById("viewMoreButton");
+    
+    const newCards = [
+        {
+            date: "Jan 15, 2024",
+            title: "The Northern Lights Experience",
+            image: "Assets/northern-lights.jpg",
+            description: "Witness the mesmerizing dance of the auroras in the Arctic sky. A dreamlike spectacle of nature."
+        },
+        {
+            date: "Feb 28, 2024",
+            title: "A Journey through the Swiss Alps",
+            image: "Assets/swiss-alps.jpg",
+            description: "Explore the breathtaking landscapes of the Swiss Alps, where snow-capped peaks meet charming villages."
+        }
+    ];
+
+    newCards.forEach(card => {
+        const cardElement = document.createElement("div");
+        cardElement.classList.add("our-blog-card");
+        cardElement.innerHTML = `
+            <div class="our-blog-card-image">
+                <img src="${card.image}" alt="${card.title}">
+            </div>
+            <div class="our-blog-card-info">
+                <p>${card.date}</p>
+                <h2>${card.title}</h2>
+                <p>${card.description}</p>
+            </div>
+        `;
+        container.appendChild(cardElement);
+    });
+    
+    // Deshabilitar el botón después de la primera carga
+    button.disabled = true;
+    button.style.opacity = "0.5";
+    button.style.cursor = "not-allowed";
+});

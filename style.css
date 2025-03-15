@@ -5,7 +5,6 @@
 }
 
 
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8fa;
@@ -634,11 +633,11 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
 }
 
 .how-it-works-step.active {
-    background-color: #838282;
+    background-color: #c9c9c9;
 }
 
 .how-it-works-step.active p {
-    color: #ffffff;
+    color: #f8f8fa;
 }
 
 .how-it-works-step i {
@@ -920,21 +919,24 @@ animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
     color: #000000;
 }
 
-.our-blog-cards-container{
-    display: flex;
-    gap: 20px;
+
+
+.our-blog-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     justify-content: center;
     width: 100%;
-    padding:40px;
-    padding-top: 10px;
+    max-width: 900px; 
+    margin: 0 auto; 
+    gap: 20px;
 }
+
 
 .our-blog-card{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 33%;
-    height: auto;
+    height: 500px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 
