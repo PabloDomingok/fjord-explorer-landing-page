@@ -120,10 +120,11 @@ document.getElementById("viewMoreButton").addEventListener("click", function() {
             description: "Witness the mesmerizing dance of the auroras in the Arctic sky. A dreamlike spectacle of nature."
         },
         {
-            date: "Feb 28, 2024",
-            title: "A Journey through the Swiss Alps",
-            image: "Assets/swiss-alps.jpg",
-            description: "Explore the breathtaking landscapes of the Swiss Alps, where snow-capped peaks meet charming villages."
+           date: "Feb 28, 2024",  
+            title: "A Journey through the Lofoten Islands",  
+            image: "Assets/lofoten.jpeg",  
+            description: "Discover the stunning beauty of the Lofoten Islands in Norway, where dramatic peaks rise above picturesque fishing villages and crystal-clear fjords."  
+
         }
     ];
 
