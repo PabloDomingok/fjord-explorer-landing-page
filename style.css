@@ -236,12 +236,13 @@ a:hover{
 	}
 }
 
-.search-bar-container{
+.search-bar-container {
     display: flex;
     justify-content: center;
-    background: transparent;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 2px 2px 2px 10px;
+    padding: 10px 20px;
     border: 1px solid #f8f8fa;
     border-radius: 50px;
     gap: 20px;
@@ -249,37 +250,81 @@ a:hover{
     animation: scale-in-forward-center 2s ease 0s 1 normal forwards;
 }
 
-.search-bar-date{
+fieldset {
     display: flex;
-    gap: 10px;
-    padding: 10px 20px;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
-.fa-calendar-days{
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+label:hover {
+    color: #f0f0f0;
+}
+
+input,
+select {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #00bcd4;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+select {
+    appearance: none;
+}
+
+.fa-solid {
     font-size: 1rem;
     color: #ffffff;
 }
 
-.bar{
+hr {
     background: #ffffff;
     width: 1px;
-    margin: 4px 0px;
+    height: 25px;
+    border: none;
 }
 
-.search-button{
+.search-button {
     background: #ffffff;
     border: none;
     color: #000000;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-.search-button:hover{
+.search-button:hover {
     background: #838282;
     color: #ffffff;
 }
+
+.search-button:focus {
+    outline: 2px solid #ffffff;
+}
+
 
 .statistics-container{
     display: flex;
@@ -287,6 +332,27 @@ a:hover{
     gap: 40px;
     margin-top: 20px;
 }
+
+input::placeholder {
+    color: #ffffff;
+    opacity: 1; 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+    opacity: 1;
+}
+
 
 .statistic{
     display: flex;

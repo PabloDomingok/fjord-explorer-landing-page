@@ -35,26 +35,37 @@
         <section class="hero-text">
             <h1>An extraordinary journey through the nature and culture of Norway’s fjords</h1>
             <p class="hero-text-p">Experience the beauty of Norway with our expert guides</p>
-            <div class="search-bar-container">
-                <div class="search-bar-date">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <label for="date">Date</label>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="bar"></div>
-                <div class="search-bar-date">
-                    <i class="fa-solid fa-money-check-dollar"></i>
-                    <label for="budget">Budget</label>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="bar"></div>
-                <div class="search-bar-date">
-                    <i class="fa-solid fa-person"></i>
-                    <label for="guests">Guests</label>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <button class="search-button">Search</button>
-            </div>
+            <form class="search-bar-container">
+                <fieldset>
+            
+                    <label for="date">
+                        <i class="fa-solid fa-calendar-days"></i> Date
+                        <input type="date" id="date" name="date">
+                    </label>
+            
+                    <hr>
+            
+                    <label for="budget">
+                        <i class="fa-solid fa-money-check-dollar"></i> Budget
+                        <select id="budget" name="budget">
+                            <option value="" selected disabled>Select budget</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </label>
+            
+                    <hr>
+            
+                    <label for="guests">
+                        <i class="fa-solid fa-person"></i> Guests
+                        <input type="number" id="guests" name="guests" min="1" placeholder="Number of guests">
+                    </label>
+            
+                    <button type="submit" class="search-button">Search</button>
+                </fieldset>
+            </form>
+            
             <div class="statistics-container">
                 <div class="statistic">
                     <h2>10M+</h2>
