@@ -149,3 +149,27 @@ document.getElementById("viewMoreButton").addEventListener("click", function() {
     button.style.opacity = "0.5";
     button.style.cursor = "not-allowed";
 });
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,no', 
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.getElementById("translate-toggle").addEventListener("change", function() {
+    var language = this.checked ? "no" : "en"; 
+    var iframe = document.querySelector("iframe.goog-te-menu-frame");
+
+    if (iframe) {
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var langOptions = innerDoc.querySelectorAll(".goog-te-menu2-item span.text");
+
+        langOptions.forEach(option => {
+            if (option.innerText.toLowerCase().includes(language)) {
+                option.click();
+            }
+        });
+    }
+});

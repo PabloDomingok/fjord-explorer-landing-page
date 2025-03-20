@@ -1071,6 +1071,12 @@ footer{
     gap: 10px;
 }
 
+.footer-links-about a, 
+.footer-links-support a, 
+.footer-links-faq a{
+    cursor: pointer;
+}
+
 .footer-links-support{
     display: flex;
     flex-direction: column;
