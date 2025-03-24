@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <img src="images/logo.png" alt="Fjord Explorer">
+            <img src="Assets/logo.svg" alt="Fjord Explorer">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
@@ -21,91 +21,7 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="nav-buttons">
-                
-                <div id="google_translate_element"></div>
-<label class="translate-label">
-    Cambiar a noruego
-    <input type="checkbox" id="translate-toggle" class="translate-toggle" />
-</label>
-
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,no',
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
-
-    document.getElementById("translate-toggle").addEventListener("change", function() {
-        var language = this.checked ? "no" : "en";
-        changeLanguage(language);
-    });
-
-    function changeLanguage(language) {
-        const iframe = document.querySelector("iframe.goog-te-menu-frame");
-
-        if (!iframe) {
-            setTimeout(() => changeLanguage(language), 500); // Espera medio segundo y vuelve a intentar
-            return;
-        }
-
-        const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-        const langOptions = innerDoc.querySelectorAll(".goog-te-menu2-item span.text");
-
-        langOptions.forEach(option => {
-            if (option.innerText.toLowerCase().includes(language)) {
-                option.click();
-            }
-        });
-    }
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<style>
-    .translate-label {
-        font-size: 16px;
-        color: #333;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .translate-toggle {
-        margin-left: 10px;
-        width: 50px;
-        height: 24px;
-        border-radius: 50px;
-        background-color: #ccc;
-        position: relative;
-        appearance: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .translate-toggle:checked {
-        background-color: #4CAF50; /* Verde al estar activado */
-    }
-
-    .translate-toggle:before {
-        content: '';
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        border-radius: 50%;
-        transition: transform 0.3s ease;
-    }
-
-    .translate-toggle:checked:before {
-        transform: translateX(26px); /* Mueve el círculo a la derecha */
-    }
-</style>
-
-                
+                                
                 <button>Login</button>
             </div>
         </nav>

@@ -25,6 +25,10 @@ nav{
     align-items: center;
 }
 
+nav img{
+    width: 150px;
+}
+
 @keyframes scale-in-forward-center  {
 	0% {
 		transform: scale(0);
